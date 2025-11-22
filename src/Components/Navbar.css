@@ -1,0 +1,39 @@
+nav.navbar {
+    padding: 20px;
+    background: #4f3d64;
+    font-size: 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+
+nav.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 0%;
+    height: 2px;
+    background-color: white;
+
+    transition: width 0.3s ease;
+}
+
+nav.navbar a:hover::after {
+    width: 100%;  
+}
+
+
+nav.navbar a:hover {
+    transform: scale(1.5);
+}

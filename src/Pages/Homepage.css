@@ -1,30 +1,24 @@
 .homepage {
+  font-size: 27px;
   padding: 20px;
   color: #4f3d64;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.image {
-  width: 300px;
-  height: 300px;
-  transform: rotate(-45deg);
-  overflow: hidden;
-  border-radius: 10px;
-  float: right;
-  margin-left: 40px;
-  margin-right: 500px;
+.homepage p {
+  font-size: 20px;  
+  opacity: 0;
+  animation: slideIn 1s ease-out forwards;
 }
 
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: rotate(45deg);
-  scale: 1.42;
+@keyframes slideIn {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.homepage h1 {
-  text-align: left;
-  font-size: 40px;
-}

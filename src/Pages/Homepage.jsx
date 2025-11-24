@@ -10,9 +10,6 @@ export default function Home () {
             <h1>THE DILEEMAS WITH <br />FACIAL RECOGNITION TECHNOLOGY</h1>
             <p>Facial Recognition Technology is an innovative means <br />of easily recognizing people via software <br />to identify and secure. Sum sum sum sum sum sum </p>
         </div>
-        <div className="image">
-            <img src={facialtech} alt="Facial Tech"/>
-        </div>
         </div>
     );
 }

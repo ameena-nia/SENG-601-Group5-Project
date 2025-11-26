@@ -11,6 +11,11 @@
   animation: slideIn 1s ease-out forwards;
 }
 
+.homepage #authors {
+  font-size: 15px;
+  color: black;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(-60px);
@@ -21,4 +26,11 @@
     opacity: 1;
   }
 }
+
+.homepage img{
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  height: 450px;
+  width: 750px;}
 

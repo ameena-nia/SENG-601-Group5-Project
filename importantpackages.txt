@@ -1,2 +1,3 @@
 npm install react-router-dom
 run app using npm run dev
+npm install chart.js react-chartjs-2

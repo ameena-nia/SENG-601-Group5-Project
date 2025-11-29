@@ -6,10 +6,41 @@
   margin: 0 auto;
 }
 
-/*
-.homepage p {
-  font-size: 20px;  
-  opacity: 0;
-  animation: slideIn 1s ease-out forwards;
+.todo-header {
+  background-color: #7a6399; 
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
 }
-*/
+
+.todo-header:hover {
+  box-shadow: 10px 10px 15px rgba(44, 28, 58, 0.3);
+  transition: all 350ms ease;
+}
+
+.todo-page h3 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.todo-header p, ul{
+  font-size: 23px;
+  color: rgb(247, 236, 236);
+  margin-left: 20px;
+}
+
+.todo-header ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.todo-header a{
+  color: rgb(247, 236, 236);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.todo-header a:hover {
+  text-decoration: underline;
+}
+

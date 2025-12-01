@@ -44,6 +44,20 @@ const CurrentEvents = () => {
             Brooklyn after facial recognition incorrectly matched him to a suspect—despite significant height and
             weight differences. Similarly, the 2025 settlement of Robert Williams’ lawsuit in Detroit led the Detroit
             Police Department to adopt stricter policies to prevent wrongful arrests based on FRT.
+            <div className="video-container">
+            <iframe
+                    src="https://www.youtube.com/embed/7s93WHlL2Gc" 
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    ></iframe>
+            <iframe
+                    src="https://www.youtube.com/embed/Tfgi9A9PfLU" 
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+                </div>
           </p>
         </article>
 

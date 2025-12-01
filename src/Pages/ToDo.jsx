@@ -1,6 +1,7 @@
 import React from "react";
 import "./ToDo.css"
 import racialbias from "../assets/racialbias.jpg"
+import diversity from "../assets/diversity.png"
 
 export default function ToDo (){
     return (
@@ -81,8 +82,36 @@ export default function ToDo (){
                             </ol>
                         </div>
 
+
                     </div>
 
+                    <div id="bias-conclusion">
+                        <div id="temp">
+                            <img src={diversity} alt="Diversity" width="400" height="240"/>
+                            <div id="text">
+                                <p>Both cases highlight the importance of diverse datasets in training 
+                                    facial recognition models. Many people do not realize that the reason
+                                    behind improperly trained FRT models are both the implicit and explicit
+                                    biases the programmers carry over during development (Quinonez 2024).
+                                </p>
+
+                                <p>The team of developers are usually not minorities themselves, 
+                                    which results in the exclusion of racial groups during training.
+                                    The primary racial makeup of the development team is usually white
+                                    males. To combat this issue, companies should strive to hire a more
+                                    diverse team of developers
+                                </p>                            
+                            </div>
+                        </div>
+                        <p>that can bring in different perspectives. Doing so will allow developers to 
+                            identify potential biases in the datasets and algorithms that they may have overlooked
+                            (Quinonez 2024). Having a diverse team can also help with creating more inclusive datasets 
+                            that better represent various demographics. This will ultimately lead to facial recognition
+                            models will greater prediction accuracy and precise performance.
+                        </p>
+                    </div>
+
+                    
 
                 </section>
                 
@@ -90,20 +119,6 @@ export default function ToDo (){
                     <h3>Privacy Violation</h3>
                 </section>
 
-                <section id="transparency">
-                    <h3>Lack of Transparency</h3>
-                    <p>blah blah blah</p>
-                </section>
-
-                <section id="autonomy">
-                    <h3>User Autonomy and Consent</h3>
-                    <p>blah blah blah</p>
-                </section>
-
-                <section id="risk">
-                    <h3>Security Risk</h3>
-                    <p>blah blah blah</p>
-                </section>
             </section>
         </div>
 

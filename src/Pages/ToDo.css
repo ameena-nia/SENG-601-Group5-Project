@@ -69,7 +69,14 @@
   color: white;
 }
 
+#temp {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 5px;
+}
 
-
-
+#bias-conclusion img {
+  border-radius: 15px;
+}
 

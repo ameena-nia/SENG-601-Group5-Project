@@ -16,8 +16,14 @@
 }
 
 .homepage #authors {
-  font-size: 15px;
+  font-size: 17px;
   color: black;
+}
+
+.homepage #home-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 @keyframes slideIn {
@@ -31,7 +37,7 @@
   }
 }
 
-.homepage img{
+#home-header img{
   display: block;
   margin: 20px auto;
   border-radius: 15px;
@@ -71,4 +77,29 @@
   50% { transform: rotate(-5deg); }
   75% { transform: rotate(3deg); }
   100% { transform: rotate(0deg); }
+}
+
+#frt-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#frt-steps div {
+  background-color: #dec5ff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 360px;
+  height: 550px;
+  text-align: center;
+}
+
+#frt-steps div img {
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#applications li {
+  color: #4f3d64;
 }

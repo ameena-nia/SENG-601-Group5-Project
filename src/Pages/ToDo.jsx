@@ -6,8 +6,14 @@ import ccpalogo from "../assets/ccpalogo.png"
 import aclu from "../assets/aclu.jpg"
 import efflogo from "../assets/efflogo.png"
 import naacp from "../assets/naacp.png"
+import { useNavigate } from "react-router-dom";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 export default function ToDo (){
+    const navigate = useNavigate();
+        const nextPage = () => {
+            navigate("/views")
+        }
     return (
         <div className="todo-page">
             <h1>POTENTIAL SOLUTIONS</h1>
@@ -190,6 +196,7 @@ export default function ToDo (){
                 </section>
 
             </section>
+             <FaArrowRightFromBracket className="arrow-icon" onClick={nextPage}/>
         </div>
 
     );

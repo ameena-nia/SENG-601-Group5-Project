@@ -4,6 +4,8 @@ import { MdSecurity } from "react-icons/md";
 import { GiTalk } from "react-icons/gi";
 import "./Views.css";
 import acm from "../assets/acm.jpeg";
+import { useNavigate } from "react-router-dom";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 
 export default function Views() {
@@ -13,6 +15,10 @@ export default function Views() {
 
   const acmsec = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
+      const nextPage = () => {
+          navigate("/sources")
+      }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -108,7 +114,7 @@ export default function Views() {
               marginTop: "10px",
             }}
           >
-            <p style={{ margin: 0 }}>Spreading awareness through media is also essential. Use hashtags and post to garner public awareness</p>
+            <p style={{ margin: 0 }}>Spreading awareness through media is also essential. Use hashtags and post </p>
           </div>
         </div>
       </div>
@@ -121,6 +127,7 @@ export default function Views() {
             We used ethical principiles from the ACM to motivate our opinions on the ethics of FRT. Technology should be constructed with the mindset it is contributing to society and human well being - ACM 1.1. Avoid Harm - ACM 1.2. Be fair and take action not to discriminate - ACM 1.4. Respect privacy and honor confidentiality - ACM 1.6 and 1.7. <br />We also used our own personal beliefs concerning bias and privacy. We all came to a general consensus that fairness and equity should be implemented in all factors of FRT.
         </p>
         </div>
+        <FaArrowRightFromBracket className="arrow-icon" onClick={nextPage}/>
     </div>
   );
 }

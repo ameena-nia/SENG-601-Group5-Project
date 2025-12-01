@@ -1,59 +1,233 @@
-.events-page {
-    font-size: 27px;
-    padding: 20px;
-    color: #4f3d64;
-    max-width: 1200px;
-    margin: 0 auto;
+:root {
+  --ce-bg: #0f172a;
+  --ce-card-bg: #0b1120;
+  --ce-border: #1e293b;
+  --ce-accent: #38bdf8;
+  --ce-accent-soft: rgba(56, 189, 248, 0.15);
+  --ce-text: #e5e7eb;
+  --ce-muted: #9ca3af;
+  --ce-radius-lg: 16px;
+  --ce-radius-md: 12px;
+  --ce-radius-pill: 999px;
+  --ce-shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.7);
+  --ce-shadow-subtle: 0 12px 30px rgba(15, 23, 42, 0.6);
 }
 
-#events {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+/* Page wrapper */
+.ce-page {
+  min-height: 100vh;
+  padding: 2.5rem 1.25rem 3rem;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: var(--ce-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#events div {
-  background-color: #7a6399;
-  color: white;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 20px;
+/* Constrain content width */
+.ce-page > * {
+  width: 100%;
+  max-width: 1080px;
 }
 
-#events img {
-  width: 70%;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 10px;
+/* Header */
+.ce-header {
+  margin-bottom: 2.5rem;
 }
 
-#concerns-list {
-  list-style-type: circle;
-  text-align: left;
+.ce-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--ce-radius-pill);
+  background: var(--ce-accent-soft);
+  color: var(--ce-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-#concerns-list li {
-  color:rgb(112, 89, 118);
-  font-size: 25px;
+.ce-tag::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--ce-accent);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
 }
 
-#steps {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.ce-title {
+  margin-top: 1rem;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 700;
 }
 
-#steps div {
-  background-color: #4f3d64;
-  color: white;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 20px;
+.ce-subtitle {
+  margin-top: 0.75rem;
+  font-size: 0.98rem;
+  color: var(--ce-muted);
+  max-width: 640px;
 }
 
-#steps img {
-  width: 255px;
-  height: 155px;
+.ce-meta {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--ce-muted);
 }
+
+.ce-meta span {
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--ce-radius-pill);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.7);
+}
+
+/* First row: main article + sidebar */
+.ce-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.3fr);
+  gap: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+
+/* Generic card */
+.ce-card {
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.05), transparent 60%),
+    var(--ce-card-bg);
+  border-radius: var(--ce-radius-lg);
+  border: 1px solid var(--ce-border);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--ce-shadow-subtle);
+}
+
+/* Main article */
+.ce-main-article {
+  box-shadow: var(--ce-shadow-soft);
+}
+
+.ce-main-article p + p {
+  margin-top: 0.85rem;
+}
+
+/* Highlight sidebar */
+.ce-highlight {
+  align-self: flex-start;
+}
+
+.ce-highlight-title {
+  font-size: 1.02rem;
+  margin-bottom: 0.8rem;
+}
+
+.ce-highlight-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ce-highlight-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--ce-muted);
+}
+
+.ce-highlight-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--ce-accent);
+}
+
+/* Section titles */
+.ce-section-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Second row: 2-column grid for ethics + challenges */
+.ce-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 2.2rem;
+}
+
+.ce-bullet-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  color: var(--ce-muted);
+}
+
+.ce-bullet-list li + li {
+  margin-top: 0.55rem;
+}
+
+/* References section */
+.ce-references {
+  margin-top: 0.5rem;
+}
+
+.ce-ref-list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.35rem;
+  font-size: 0.92rem;
+  color: var(--ce-muted);
+}
+
+.ce-ref-list li + li {
+  margin-top: 0.55rem;
+}
+
+.ce-ref-list a {
+  color: var(--ce-accent);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(56, 189, 248, 0.6);
+}
+
+.ce-ref-list a:hover {
+  border-bottom-style: solid;
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .ce-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ce-highlight {
+    order: -1;
+  }
+
+  .ce-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ce-page {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ce-card {
+    padding: 1.2rem 1.1rem;
+  }
+
+  .ce-meta {
+    flex-direction: column;
+  }
+}
+

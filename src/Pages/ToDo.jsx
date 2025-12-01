@@ -1,5 +1,6 @@
 import React from "react";
 import "./ToDo.css"
+import racialbias from "../assets/racialbias.jpg"
 
 export default function ToDo (){
     return (
@@ -61,7 +62,23 @@ export default function ToDo (){
                         </div>
 
                         <div id="case-2">
-                            <h4>Microsoft</h4>
+                            <h4>Microsoft FaceDetect Model</h4>
+                            <img src={racialbias} alt="Racial Bias" width="400" height="240"/>
+                            <h6>In 2018, researchers Joy Buolamwini and Timnit Gebru wrote a paper about intersectional discrimination
+                                within big facial analysis technologies and software trained on large datasets. Microsoft FaceDetect
+                                model was among the many technologies the two authors tested. 
+                            </h6> 
+                            <h6>To analyze the performance of the software, both researchers created a 
+                                balanced dataset containing a diverse set of skin types and gender groups. 
+                            </h6>
+
+                            <ol id="classify-results">
+                                <li>For gender classification tasks, the model displayed a low error in prediction, with a rate of 6.3%.</li>
+                                <br></br>
+                                <li>However, greater disparities were shown for both gender and race classification tasks. The model 
+                                produced a 0% error rate for light-skinned, male predictions, but a 20.8% error rate for dark skinned female predictions.
+                                </li>
+                            </ol>
                         </div>
 
                     </div>

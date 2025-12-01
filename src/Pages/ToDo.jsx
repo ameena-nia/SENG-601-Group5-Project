@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import React from "react";
 import "./ToDo.css"
 import racialbias from "../assets/racialbias.jpg"
@@ -20,11 +21,11 @@ export default function ToDo (){
             <div className="todo-header">    
                 <p>We stated previously that the main ethical concerns with facial recognition algorithms are:</p>
                 <ul>
-                    <li><a href="#privacy">Privacy Violations</a></li>
-                    <li><a href="#bias">Bias and Discrimination</a></li>
-                    <li><a href="#transparency">Lack of Transparency</a></li>
-                    <li><a href="#autonomy">User Autonomy and Consent</a></li>
-                    <li><a href="#risk">Security Risk</a></li>
+                    <li><Link to="/ethics">Privacy Violations</Link></li>
+                    <li><Link to="/ethics">Bias and Discrimination</Link></li>
+                    <li><Link to="/events">Lack of Transparency</Link></li>
+                    <li><Link to="/events">User Autonomy and Consent</Link></li>
+                    <li><Link to="/events">Security Risk</Link></li>
                 </ul>
                 <p>To address these issues, we have compiled a list of solutions and legal and policy changes that
                      stakeholders can take to make facial recognition technology (FRT) more safe for everybody to use.</p>  

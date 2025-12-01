@@ -19,7 +19,7 @@
 }
 
 .todo-page h3 {
-  font-size: 40px;
+  font-size: 35px;
   font-style: italic;
 }
 
@@ -43,4 +43,33 @@
 .todo-header a:hover {
   text-decoration: underline;
 }
+
+#solutions p {
+  font-size: 20px;
+  color: rgb(112, 89, 118);
+}
+
+.bias-cases {
+  display: flex;
+  justify-content: space-around;
+} 
+
+.bias-cases #case-1, .bias-cases #case-2 {
+  width: 45%;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #4f3d64;
+  color: white;
+}
+
+#bias-types li{
+  font-size: 18px;
+  color: white;
+}
+
+
+
+
 

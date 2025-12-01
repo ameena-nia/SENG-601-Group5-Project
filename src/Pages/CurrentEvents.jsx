@@ -1,7 +1,13 @@
 import React from "react";
 import "./CurrentEvents.css";
+import { useNavigate } from "react-router-dom";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 const CurrentEvents = () => {
+    const navigate = useNavigate();
+    const nextPage = () => {
+        navigate("/todo")
+    }
   return (
     <main className="ce-page">
       <header className="ce-header">
@@ -141,7 +147,9 @@ const CurrentEvents = () => {
           </li>
         </ol>
       </section>
+      <FaArrowRightFromBracket className="arrow-icon" onClick={nextPage}/>
     </main>
+    
   );
 };
 

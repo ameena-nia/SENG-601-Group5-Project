@@ -10,6 +10,10 @@
   opacity: 0;
   animation: slideIn 1s ease-out forwards;
 }
+.homepage h2 {
+  opacity: 0;
+  animation: slideInRight 1s ease-out forwards;
+}
 
 .homepage #authors {
   font-size: 15px;
@@ -34,5 +38,37 @@
   height: 350px;
   width: 450px;
   float: right;
+  opacity: 0;
+  animation: slideInRight 1s ease-out forwards;
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(60px); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.arrow-icon:hover {
+  animation: shake 0.6s ease-in-out;
+}
+.arrow-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+@keyframes shake {
+   0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}

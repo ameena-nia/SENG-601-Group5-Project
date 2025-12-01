@@ -1,7 +1,13 @@
 import React from "react";
 import Chart from "../Components/Chart";
 import "./Ethics.css";
+import { useNavigate } from "react-router-dom";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 export default function Ethics (){
+        const navigate = useNavigate();
+        const nextPage = () => {
+            navigate("/events")
+        }
     return (
         <div className="ethics">
             <h1>WHY SHOULD WE BE CONCERNED</h1>
@@ -32,6 +38,7 @@ export default function Ethics (){
                 <p>There have also been cases of wrongful arrest due to facial recognition technology.</p>
                 <p>A man named Travis Williams was arrested by the NYPD for a sex related crime. Williams ended up being falsely arrested and jailed for two even though he did not match the description of the perpetrator. The only two distinct similarities between the two were that they were both black and locs. Williams was falsely arrested due to the NYPD's facial recognition technology, causing Civil Rights and privacy activist groups speak out against this and demand a proper investigation</p>
             </section>
+            <FaArrowRightFromBracket className="arrow-icon" onClick={nextPage}/>
         </div>
 
     );

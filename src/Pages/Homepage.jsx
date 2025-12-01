@@ -1,8 +1,15 @@
 import React from "react";
-import "./Homepage.css"
-import facialtech from "../assets/facialtech.png"
+import "./Homepage.css";
+import facialtech from "../assets/facialtech.png";
+import { useNavigate } from "react-router-dom";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
+
 
 export default function Home () {
+    const navigate = useNavigate();
+    const nextPage = () => {
+        navigate("/ethics")
+    }
     return (
         <div className="home">
             
@@ -15,17 +22,9 @@ export default function Home () {
                 <h2>What is Facial Recognition?</h2>
                 <p>Facial Recognition Technology is an innovative means <br />
                 of easily recognizing people via software <br />
-                to identify and secure. Sum sum sum sum sum sum </p>
+                to identify and secure. However, there are some dileemas raised from combining humans features and technology!</p>
+                <FaArrowRightFromBracket className="arrow-icon" onClick={nextPage}/>
             </section>
-
-            <section id="ethical-concerns">
-                <h2>Key Ethical Concerns</h2>
-            </section>
-
-            <section id="real-world-applications">
-                <h2>Real World Applications</h2>
-            </section>
-
         </div>
         </div>
     );

@@ -34,6 +34,16 @@ export default function Sources (){
 
                     <li>U.S. Commission on Civil Rights. (2024). U.S. Commission on Civil Rights releases report on civil rights implications of federal use of facial recognition technology.
                          https://www.usccr.gov/news/2024/us-commission-civil-rights-releases-report-civil-rights-implications-federal-use-facial</li>
+
+                     <li>Luxand. (2024). Police facial recognition: Safe or scary? What you need to know. Luxand Cloud. https://luxand.cloud/face-recognition-blog/police-facial-recognition-safe-or-scary-what-you-need-to-know-2024</li>
+
+                    <li>Association for Computing Machinery. (2018). ACM Code of Ethics and Professional Conduct. https://www.acm.org/code-of-ethics</li>
+
+                    <li>CBS New York. (2025). Facial recognition technology error led to wrongful arrest, Brooklyn father says. CBS New York. https://www.cbsnews.com/newyork/news/nyc-facial-recognition-technology-wrongful-arrest-indecent-exposure/</li>
+
+                    <li>Cranmore, C. (2025). Black man falsely jailed after failure of NYPD’s facial recognition surveillance tech. ABC7 New York. https://abc7ny.com/17664671/</li>
+
+                    <li>Manis, E., Cahn, A. F., Akyol, N., & Magee, C. (2021). Scan City: A decade of NYPD facial recognition abuse (White paper). Surveillance Technology Oversight Project.</li>
                 </ul>                
             </div>
 

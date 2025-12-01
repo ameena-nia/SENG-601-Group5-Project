@@ -2,6 +2,10 @@ import React from "react";
 import "./ToDo.css"
 import racialbias from "../assets/racialbias.jpg"
 import diversity from "../assets/diversity.png"
+import ccpalogo from "../assets/ccpalogo.png"
+import aclu from "../assets/aclu.jpg"
+import efflogo from "../assets/efflogo.png"
+import naacp from "../assets/naacp.png"
 
 export default function ToDo (){
     return (
@@ -110,13 +114,79 @@ export default function ToDo (){
                             models will greater prediction accuracy and precise performance.
                         </p>
                     </div>
-
-                    
-
                 </section>
                 
-                <section id="privacy">
-                    <h3>Privacy Violation</h3>
+                <section id="policy">
+                    <h3>Legal Intervention</h3>
+                    <p>To ensure fairness and accountability, federal and state governments should establish
+                        uniform rules and regulations for FRT use in criminal investigations such as:
+                    </p>
+                    <ul id="legal-list">
+                        <li>1. Requiring judicial warrants or probable cause before deploying FRT for identification or arrests.</li>
+                        <li>2. Requiring independent audits and bias testing of facial recognition systems, with public
+                        reporting of error rates. </li> 
+                        <li>3. Prohibiting use of privately scraped databases that violate privacy rights.</li> 
+                        <li>4. Requiring human verification before any arrest based on an algorithmic match. </li>
+                        <li>5. Guaranteeing a right to notification and appeal for individuals wrongly identified.</li>
+                    </ul>
+                
+                    <div id="state-policy">
+                        <div id="temp-2">
+                            <div id="text-2">
+                                <p>These changes to FRT can be implemented both at the federal and state level with the help of congress,
+                                    state legislators and local oversight boards. The California Consumer Privacy Act (CCPA) is an example
+                                    of state level change that prohibits the use of FRT for criminal investigation without the knowledge of consumers. 
+                                </p>
+                                <p>
+                                    In California, businesses are required to provide notice before collecting facial data, 
+                                    protect it with reasonable security, and allow consumers to exercise rights such as accessing,
+                                    deleting and opting out of the sale or sharing of their FRT data.                             
+                                </p>
+                            </div>
+                            <img src={ccpalogo} alt="CCPA" width="485" height="380"/>
+                        </div>
+                        <p>Civil society organizations such as the American Civil Liberties Union (ACLU), Electronic Frontier Foundation (EFF),
+                            and the National Association for the Advancement of Colored People (NAACP) play an essential role in encouraging 
+                            reform through public education and advocacy.
+                        </p>
+
+                        <div id="org-logos">
+                            <img src={aclu} alt="ACLU"/>
+                            <img src={efflogo} alt="EFF"/>
+                            <img src={naacp} alt="NAACP"/>
+                        </div>
+                    </div>
+                    <h4><em>Impact on Stakeholders</em></h4>
+                    <p>Stakeholders that are involved in FRT use for criminal arrest are law enforcement, the general public, minorities who 
+                        are disproportionately affected by FRT and tech companies.
+                    </p>
+                    <div id="stakeholders">
+                        <div id="law">
+                            <h5>Law Enforcement</h5>
+                            <p>New regulations will increase public trust and transparency
+                            but may initially affect the speed of investigations negatively for law enforcement.</p>
+                        </div>
+
+                        <div id="public">
+                            <h5>General Public</h5>
+                            <p>The general public would gain greater privacy and protection from wrongful arrests,
+                            though some citizens may feel less secure due to the new changes.</p>
+                        </div>
+
+                        <div id="minorities">
+                            <h5>Minority Communities</h5>
+                            <p>
+                                Minorities would benefit from decreased racial bias and discrimination in FRT use,
+                                leading to fairer treatment and increased representation.
+                            </p>
+                        </div>  
+
+                        <div id="tech">
+                            <h5>Tech Companies</h5>
+                            <p>Technology companies could face higher compliance 
+                                costs but gain credibility and innovation incentives. </p>
+                        </div>
+                    </div>
                 </section>
 
             </section>

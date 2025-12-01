@@ -74,9 +74,51 @@
   justify-content: center;
   padding: 20px;
   margin-top: 5px;
+  gap: 20px;
 }
 
 #bias-conclusion img {
   border-radius: 15px;
 }
 
+#legal-list {
+  background-color: #7a6399;
+  padding: 10px;
+  border-radius: 15px;
+  list-style-type: circle;
+}
+
+#temp-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#org-logos {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 45px;
+  margin-top: 15px;
+}
+
+#org-logos img {
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#stakeholders {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+#stakeholders div {
+  background-color: #dec5ff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}

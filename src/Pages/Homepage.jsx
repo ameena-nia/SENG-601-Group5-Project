@@ -18,7 +18,9 @@ export default function Home () {
             
          <div className="homepage">
             <h1>THE ETHICAL DILEMMA OF <br />FACIAL RECOGNITION TECHNOLOGY</h1>
+            <p>SENG 601 - Fall 2025</p>
             <p id='authors'>By: Chelsea Okoroji, Garrett Mizell, Rediat Mulualem, Ameena Niamathullah</p>
+            
             
             <br></br>
 

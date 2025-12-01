@@ -6,6 +6,8 @@ export default function Sources (){
         <div className="sources-page">
             <h1>SOURCES</h1>
             <div id="sources-list">
+
+
                 <ul>
                     <li>American Civil Liberties Union. (2020, June 24). Wrongfully accused by an algorithm. https://www.aclu.org/news/privacy-technology/wrongfully-accused-by-an-algorithm</li>
 
@@ -41,6 +43,15 @@ export default function Sources (){
 
                     <li>U.S. Commission on Civil Rights. (2024). U.S. Commission on Civil Rights releases report on civil rights implications of federal use of facial recognition technology. https://www.usccr.gov/news/2024/us-commission-civil-rights-releases-report-civil-rights-implications-federal-use-facial</li>
                 </ul>                
+            </div>                
+            
+            <div id="attestation">
+                    <h2>Attestation of Ethics</h2>
+                    <p>By submitting this assignment, every individual in the team asserts that they have completed
+                    work on their own and have properly cited any sources or AI tools used and where they are used.
+                    Each individual named in the assignment also asserts that they have done an appropriate amount
+                    of work on this assignment as well and have not simply had their name included without
+                    appropriate participation.</p>                    
             </div>
         </div>
     );

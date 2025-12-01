@@ -34,6 +34,10 @@
   margin-left: 20px;
 }
 
+.todo-header li {
+  font-size: 23px;
+}
+
 .todo-header a{
   color: rgb(247, 236, 236);
   text-decoration: none;

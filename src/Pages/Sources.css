@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-ul, li {
+.sources-page ul, .sources-page li {
   list-style-type: disc;
   padding-left: 20px;
   color: #7a6399;

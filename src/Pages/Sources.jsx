@@ -12,7 +12,7 @@ export default function Sources (){
                     <li>Garvie, C. (2021). A national agenda for facial recognition accountability. Georgetown Law Center on Privacy & Technology.
                          https://www.privacyandtech.org/</li>
                     <li>Hesson, T. (2025, October 24). U.S. expands facial recognition at borders to track non-citizens. Reuters. 
-                        https://www.reuters.com/world/us/us-expands-facial-recognition-borders-track-non-citizens-2025-10-24/</li>
+          =              https://www.reuters.com/world/us/us-expands-facial-recognition-borders-track-non-citizens-2025-10-24/</li>
 
                     <li>Hill, K. (2020, January 18). The secretive company that might end privacy as we know it. The New York Times. 
                         https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html</li>

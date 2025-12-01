@@ -9,7 +9,7 @@ export default function Ethics (){
             <p>One of the few ethical concerns regarding facial recognition technology is<br />that there is a bias that performs different based on factors such as race, gender, and etc</p>
             <div style={{ width: "500px", height: "300px", margin: "0 auto" }}>
                 <Chart />
-                <p style={{ marginTop: "10px", fontSize: "14px", color: "#555" }}>
+                <p style={{ marginTop: "10px", fontSize: "10px", color: "#555" }}>
                     LuxAndCloud (2024) Police Facial Recognition: Safe or Scary? What You Need to Know. https://luxand.cloud/face-recognition-blog/police-facial-recognition-safe-or-scary-what-you-need-to-know-2024
                 </p>
             </div> 
